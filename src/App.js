@@ -23,6 +23,8 @@ function App() {
   return (
     <div style={styles.mainFrame} >
       Test
+   
+
       <img src={image.data[0].url} />
 
     </div>
