@@ -1,5 +1,6 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
+import "./image.css";
 
 function App() {
 
@@ -22,10 +23,8 @@ function App() {
 
   return (
     <div style={styles.mainFrame} >
-      Test
-   
-
-      <img src={image.data[0].url} />
+     
+      <img src={image.data[0].url} class="img-fluid imageMax" alt="Responsive image" />
 
     </div>
   );
