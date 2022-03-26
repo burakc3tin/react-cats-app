@@ -1,6 +1,8 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
 import "./image.css";
+import cat1 from "./cat1.png";
+import cat2 from "./cat2.png";
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
     <div style={styles.mainFrame} >
      
       <img src={image.data[0].url} class="img-fluid imageMax" alt="Responsive image" />
+      <img src={cat1} class="catImage" alt="Responsive image" />
+      {/* <img src={cat2} class="img-fluid catImage" alt="Responsive image" /> */}
 
     </div>
   );
@@ -33,6 +37,7 @@ function App() {
 const styles = {
   mainFrame: {
     display: 'flex',
+    flexDirection:"column",
     alignItems: 'center',
     justifyContent: 'center',
     height: "100vh"

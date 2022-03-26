@@ -1,4 +1,8 @@
 .imageMax {
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 450px;
+    max-height: 450px;
+}
+.catImage {
+    max-width: 100px;
+    max-height: 100px;
 }
