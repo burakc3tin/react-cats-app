@@ -10,13 +10,17 @@ function App() {
   const [image, setImage] = useState([]);
 
   useEffect(() => {
-    axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
+  
+  catsChange();
+  }, []);
+
+  const catsChange = async () => {
+   await axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
       setImage(response);
       setLoading(false);
       console.log(image.data[0])
     });
-  }, []);
-
+  }
 
   if (isLoading) {
     return <div className="App">Loading...</div>;
@@ -26,8 +30,8 @@ function App() {
   return (
     <div style={styles.mainFrame} >
      
-      <img src={image.data[0].url} class="img-fluid imageMax" alt="Responsive image" />
-      <img src={cat1} class="catImage" alt="Responsive image" />
+      <img src={image.data[0].url} className ="img-fluid imageMax" alt="Responsive image" />
+      <img src={cat1} className ="catImage" alt="Responsive image" onClick={catsChange} />
       {/* <img src={cat2} class="img-fluid catImage" alt="Responsive image" /> */}
 
     </div>
