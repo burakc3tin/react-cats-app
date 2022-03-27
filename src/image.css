@@ -1,8 +1,21 @@
 .imageMax {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
 }
 .catImage {
     max-width: 100px;
     max-height: 100px;
+    margin-top: 80px;
+}
+
+.loader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img{
+    height: 150px;
+    width: 150px;
 }

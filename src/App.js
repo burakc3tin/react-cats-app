@@ -3,6 +3,7 @@ import { React, useEffect, useState } from "react";
 import "./image.css";
 import cat1 from "./cat1.png";
 import cat2 from "./cat2.png";
+import Loader from "./Loader";
 
 function App() {
 
@@ -15,16 +16,24 @@ function App() {
   }, []);
 
   const catsChange = async () => {
+    setLoading(true);
+
    await axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
       setImage(response);
       setLoading(false);
-      console.log(image.data[0])
+       
+      
+       
     });
   }
 
+const loaderChange = () => {
+
+}
+
   if (isLoading) {
-    return <div className="App">Loading...</div>;
-  } //Burası loader ekranı
+    return <Loader/>;
+  } // loader ekranı
 
 
   return (
