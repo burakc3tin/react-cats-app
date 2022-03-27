@@ -1,11 +1,16 @@
 .imageMax {
-    max-width: 300px;
-    max-height: 300px;
-}
+    max-width: 350px;
+    max-height: 350px;
+	border: solid 6px;
+	border-image: linear-gradient(90deg, purple, orange) 1;
+    
+ }
 .catImage {
     max-width: 100px;
     max-height: 100px;
     margin-top: 80px;
+  
+
 }
  
 .loader{
@@ -13,9 +18,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./background.jpg");
+
 }
 
 .loader img{
     height: 150px;
     width: 150px;
+}
+
+.home{
+    background-image: url("./background.jpg");
+  
+
 }

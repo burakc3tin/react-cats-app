@@ -43,7 +43,7 @@ const loaderChange = () => {
   
 
   return (
-    <div style={styles.mainFrame} >
+    <div style={styles.mainFrame} className="home">
      
       <img src={image.data[0].url} className ="img-fluid imageMax" alt="Responsive image" />
       <img src={catImage} className ="catImage" alt="Responsive image" onClick={catsChange} id="catsChange" 
