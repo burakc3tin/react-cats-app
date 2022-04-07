@@ -19,7 +19,6 @@ function App() {
 
   const catsChange = async () => {
     setLoading(true);
-
    await axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
       setImage(response);
       
