@@ -22,8 +22,11 @@ function App() {
 
    await axios.get("https://api.thecatapi.com/v1/images/search").then(response => {
       setImage(response);
-      setLoading(false);
-       
+      
+      setTimeout(() => { 
+        setLoading(false);
+      },750)
+      setCatImage(cat1)
       // $("#catsChange").hover(function(){
       //   setCatsName("cat2")
       // });

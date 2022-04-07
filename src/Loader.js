@@ -1,7 +1,7 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
 import "./image.css";
-import cat3 from "./cat3.png";
+import cat3 from "./cat3.gif";
 
 function Loader() {
 

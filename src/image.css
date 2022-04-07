@@ -1,8 +1,9 @@
 .imageMax {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 500px;
+    max-height: 500px;
 	border: solid 6px;
 	border-image: linear-gradient(90deg, purple, orange) 1;
+    
     
  }
 .catImage {
@@ -19,7 +20,9 @@
     justify-content: center;
     align-items: center;
     background-image: url("./background.jpg");
-
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .loader img{
@@ -30,5 +33,75 @@
 .home{
     background-image: url("./background.jpg");
   
-
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+@media only screen and (max-width: 800px) {
+    .imageMax {
+        max-width: 700px;
+        max-height: 700px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
+
+@media only screen and (max-width: 750px) {
+    .imageMax {
+        max-width: 650px;
+        max-height: 650px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
+
+
+@media only screen and (max-width: 700px) {
+    .imageMax {
+        max-width: 600px;
+        max-height: 600px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .imageMax {
+        max-width: 500px;
+        max-height: 500px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .imageMax {
+        max-width: 400px;
+        max-height: 400px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .imageMax {
+        max-width: 300px;
+        max-height: 300px;
+        border: solid 6px;
+        border-image: linear-gradient(90deg, purple, orange) 1;
+        
+        
+     }
+  }
