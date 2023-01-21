@@ -4,7 +4,7 @@ This project is a project made using `react`, `cats api` and `axios`.
  
 ## Live 
 
- [Click](https://react-catsapp-burak.herokuapp.com/).
+ [Click](https://kedidunyasi.netlify.app/).
  
 ## Screenshots 
 
